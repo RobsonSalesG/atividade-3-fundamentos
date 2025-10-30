@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import 'variables.css';
+@import 'layout.css';
+@import 'components.css';
+
+body {
+  font-family: var(--font-family-base);
+  margin: 0;
+  color: var(--color-neutral-800);
+  background: var(--color-neutral-200);
+}
+h1, h2, h3 {
+  margin-top: 0;
+}
+.intro {
+  text-align: center;
+  margin-top: var(--space-4);
+}
+.footer p {
+  margin: 0;
+}

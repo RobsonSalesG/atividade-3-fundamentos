@@ -1,0 +1,82 @@
+/* Estrutura base */
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-3);
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--space-2);
+}
+
+.header, .footer {
+  grid-column: 1 / -1;
+  background: var(--color-primary);
+  color: white;
+  padding: var(--space-2);
+  text-align: center;
+}
+
+/* Navegação */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: var(--space-2);
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  background: var(--color-neutral-200);
+  padding: var(--space-1);
+}
+.navbar li:hover > .submenu {
+  display: block;
+}
+
+.navbar img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Menu hambúrguer */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: var(--font-size-xl);
+}
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    background: var(--color-primary);
+    width: 100%;
+  }
+  .navbar ul.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Layout principal */
+.main {
+  grid-column: 1 / -1;
+}
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}

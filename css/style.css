@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #0078d7;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav button {
+  background: #fff;
+  border: none;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background: #e0e0e0;
+}
+
+main {
+  padding: 2rem;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.msg-erro {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.sucesso {
+  color: green;
+  font-weight: bold;
+}
